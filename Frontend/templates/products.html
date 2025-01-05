@@ -1,11 +1,13 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
 
-<h1>ALL PRODUCTS</h1>
+{% block content %}
+
 
 <div class="container">
   <a href="/inventory/products/add/">
-    <button class="btn btn-primary float-end m-2">+ Add Products</button>
+    <button class="btn btn-primary float-end m-2"><i class="fa-solid fa-cart-plus"></i> Add Products</button>
   </a>
+  <h1 class="pageheading text-white mt-4">PRODUCTS LIST 📃</h1>
 </div>
 
 <div class="container">
@@ -47,6 +49,7 @@
       {% endfor %}
     </tbody>
   </table>
+  <p class="pagepara">Discover an extensive range of products tailored to meet all your needs at [Your Supermarket Name]! From fresh produce to household essentials, explore high-quality items at unbeatable prices. Our organized categories and detailed descriptions make shopping easy and convenient. Start browsing now and find everything you’re looking for in one place!</p>
 </div>
 
 {% endblock %}

@@ -10,7 +10,7 @@ class Customer_Form(forms.ModelForm):
         fields = '__all__'
 
         widgets = {
-            'customer_name' : forms.TextInput(attrs={'class':"form-control mt-1 mx-2 mb-3"}),
+            'customer_name' : forms.TextInput(attrs={'class':"form-control mt-1 mx-2 mb-3 "}),
             'customer_since' :  forms.DateInput(attrs={'class':"form-control mt-1 mx-2 mb-3"}),
         }
 

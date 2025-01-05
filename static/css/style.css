@@ -1,0 +1,84 @@
+.pageheading{
+    color: white;
+    text-shadow: 0 0 10px #000000,
+                 0 0 20px #000000,
+                 0 0 40px #000000,
+                 0 0 80px #000000,
+                 0 0 120px #000000,
+                 0 0 160px #000000;
+}
+
+.pagepara{
+    padding: 10px;
+    background: linear-gradient(135deg,rgba(216, 216, 216, 0.166),rgba(190, 190, 190, 0.115));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: rgb(208, 208, 208);
+    font-weight: 30px;
+    text-shadow: 0 0 20px #000000,
+                 0 0 40px #000000,
+                 0 0 80px #000000,
+                 0 0 120px #000000,
+                 0 0 160px #000000,
+                 0 0 180px #000000;
+}
+
+table, th, td{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+.loginpage{
+   background-image: url(/static/assets/images/login.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+.signuppage{
+   background-image: url(/static/assets/images/signup.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+.basepage{
+   background-image: url(/static/assets/images/background.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-image: loading;
+}
+
+.loginpage label,h2{
+    text-shadow: 0 0 10px #000000,
+                 0 0 20px #000000,
+                 0 0 40px #000000,
+                 0 0 80px #000000,
+                 0 0 120px #000000,
+                 0 0 160px #000000;
+}
+
+.signuppage label,h2{
+    text-shadow: 0 0 10px #000000,
+                 0 0 20px #000000,
+                 0 0 40px #000000,
+                 0 0 80px #000000,
+                 0 0 120px #000000,
+                 0 0 160px #000000;
+}
+
+.signuppage form{
+    padding: 30px;
+    background: linear-gradient(135deg,rgba(216, 216, 216, 0.166),rgba(190, 190, 190, 0.115));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.customerpage img{
+    border-radius: 5px;
+}

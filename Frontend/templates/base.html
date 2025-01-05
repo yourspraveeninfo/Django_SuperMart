@@ -11,38 +11,25 @@
     {% load bootstrap5 %} 
     {% bootstrap_css %} 
     {% bootstrap_javascript %}
-    
-    <link rel="stylesheet" href="{% static 'css/customer.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <link rel="icon" href="{% static 'assets/images/minimart.png' %}"></link>
 
     <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
 
     <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
-    
-    <style>
-      table, th, td{
-        border: 2px solid white;
-        padding: 10px;
-      }
-    </style>
   </head>
   
-  <body class="bg-dark">
+  <body class="basepage">
 
     {% include 'navbar.html' %}
-
-    <!-- Dynamic Content -->
 
     {% block content %}
     
     {% endblock %}
 
     <script src="{% static 'js/test.js' %}"></script>
-
-    <footer>
-      <p>CopyRight @ 2024</p>
-    </footer>
   
   </body>
 </html>

@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Mart | Login Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="icon" href="{% static 'assets/images/minimart.png' %}"></link>
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
     {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
 </head>
-<body class="bg-dark">
+<body class="loginpage">
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <h2 class="mb-4 text-light float-center">Welcome To Super Mart 🛒</h2>
+                <h2 class="pageheading mb-4 text-light float-center">Welcome To Super Mart 🛒</h2>
                 <br>
                 <form action="" method="POST" class="text-light">
 
@@ -20,20 +23,20 @@
 
                     <div class="mb-3">
                         <label for="exampleInputEmaill" class="form-label">Username</label>
-                        <input type="text" class="form-control bg-secondary text-light" name="username" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <input type="text" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPasswordl" class="form-label">Password</label>
-                        <input tybe="password" class="form-control bg-secondary text-light" name="password" id="exampleInputPassword1" required>
+                        <input tybe="password" class="form-control" name="password" id="exampleInputPassword1" required>
                     </div>
 
                     <p class="text-danger fw-bold">{{error}}</p>
 
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-primary">Login <i class="fa-solid fa-right-to-bracket"></i></button>
 
                 </form>
 
-                <a href="/signup/"><button class="btn btn-info float-end">Signup</button></a>
+                <a href="/signup/"><button class="btn btn-info float-end"><i class="fa-solid fa-user-plus"></i> Signup</button></a>
 
             </div>
         </div>

@@ -1,21 +1,21 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+
+{% block content %}
 
 <div class="container">
-    <h2 class="text-light">ADD PRODUCTS</h2>
-</div>
-
-<div class="container">
+    
+    <a href="/inventory/products/">
+        <button class="btn btn-secondary float-end text-black"><i class="fa-solid fa-arrow-left"></i> Back</button>
+    </a>
+    
+    <h2 class=" pageheading text-light mt-4">ADD PRODUCTS</h2>
+    
     <form action="" method="POST" class="text-light " enctype="multipart/form-data">
         {% csrf_token %}
         {{product_form}}
         <input type="submit" value="Add Product" class="btn btn-primary mt-2 mx-2">
+    
     </form>
-</div>
-
-<div class="container">
-    <a href="/inventory/products/">
-        <button class="btn btn-secondary float-end text-dark">Back</button>
-    </a>
 </div>
 
 {% endblock %}
