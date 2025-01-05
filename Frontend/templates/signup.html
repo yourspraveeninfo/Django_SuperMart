@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Enter User Details</title>
+    <link rel="icon" href="{% static 'assets/images/minimart.png' %}"></link>
+    {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
+</head>
+<body class="bg-dark">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4 text-light">Signup Page</h2>
+                <form action="" method="POST" class="text-light">
+
+                    {% csrf_token %}
+                    
+                    <div class="mb-3">
+                        <label for="exampleInputEmaill" class="form-label">First Name</label>
+                        <input type="text" class="form-control bg-secondary text-light mx-2" name="first_name" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmaill" class="form-label">Last Name</label>
+                        <input type="text" class="form-control bg-secondary text-light mx-2" name="last_name" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmaill" class="form-label">Age</label>
+                        <input type="number" class="form-control bg-secondary text-light mx-2" name="age" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmaill" class="form-label">Email Address</label>
+                        <input type="email" class="form-control bg-secondary text-light mx-2" name="email_address" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmaill" class="form-label">Username</label>
+                        <input type="text" class="form-control bg-secondary text-light mx-2" name="username" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
+                    </div>
+
+                    <p class="text-danger fw-bold">{{error}}</p>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPasswordl" class="form-label">Password</label>
+                        <input tybe="password" class="form-control bg-secondary text-light mx-2" name="password" id="exampleInputPassword1" required/>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mx-2">Submit</button>
+                </form>
+
+                <a href="/"><button class="btn btn-secondary float-end text-dark">Back</button></a>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

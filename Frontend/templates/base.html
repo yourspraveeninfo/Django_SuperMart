@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Super Mart | Daily Home Needs</title>
+    
+    {% load bootstrap5 %} 
+    {% bootstrap_css %} 
+    {% bootstrap_javascript %}
+    
+    <link rel="stylesheet" href="{% static 'css/customer.css' %}">
+
+    <link rel="icon" href="{% static 'assets/images/minimart.png' %}"></link>
+
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    
+    <style>
+      table, th, td{
+        border: 2px solid white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  
+  <body class="bg-dark">
+
+    {% include 'navbar.html' %}
+
+    <!-- Dynamic Content -->
+
+    {% block content %}
+    
+    {% endblock %}
+
+    <script src="{% static 'js/test.js' %}"></script>
+
+    <footer>
+      <p>CopyRight @ 2024</p>
+    </footer>
+  
+  </body>
+</html>
